@@ -37,7 +37,7 @@ var timerEl = document.querySelector("#timer");
 
 var questionIndex = 0;
 var correctCount = 0;
-var time = 30;
+var time = 10;
 var intervalId;
 
 function endQuiz() {
@@ -45,11 +45,10 @@ function endQuiz() {
   var body = document.body;
   body.innerHTML = "Game over, You scored " + correctCount;
   setTimeout(showHighScore, 2);
-  window.location.href="highsScores.html"
 }
 
 function showHighScore() {
-  var name = prompt("Please enter your initials");
+  var name = prompt("Please enter your name");
 
   var high_scores = localStorage.getItem("scores");
 
