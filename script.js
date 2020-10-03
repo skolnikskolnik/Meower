@@ -45,6 +45,7 @@ function endQuiz() {
   var body = document.body;
   body.innerHTML = "Game over, You scored " + correctCount;
   setTimeout(showHighScore, 2);
+  window.location.href="highsScores.html"
 }
 
 function showHighScore() {
