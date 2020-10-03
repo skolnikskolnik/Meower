@@ -40,6 +40,8 @@ var correctCount = 0;
 var time = 10;
 var intervalId;
 
+timerEl.textContent=time;
+
 function endQuiz() {
   clearInterval(intervalId);
   var body = document.body;
