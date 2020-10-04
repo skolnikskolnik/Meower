@@ -46,12 +46,15 @@ function endQuiz() {
   clearInterval(intervalId);
   var body = document.body;
   body.innerHTML = "Game over, You scored " + correctCount;
+  //After 2 s move on to showHighScore
   setTimeout(showHighScore, 2);
 }
 
 function showHighScore() {
-  var name = prompt("Please enter your name");
+  //Prompts user to enter initials
+  var name = prompt("Please enter your initials");
 
+  //Gets scores
   var high_scores = localStorage.getItem("scores");
 
   if (!high_scores) {
@@ -60,6 +63,7 @@ function showHighScore() {
     high_scores = JSON.parse(high_scores);
   }
 
+  //adds new items to array
   high_scores.push({ name: name, score: correctCount });
 
   localStorage.setItem("scores", JSON.stringify(high_scores));

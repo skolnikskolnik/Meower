@@ -1,18 +1,30 @@
-function showHighScore() {
-    var name = prompt("Please enter your name");
-  
-    var high_scores = localStorage.getItem("scores");
-  
-    if (!high_scores) {
-      high_scores = [];
-    } else {
-      high_scores = JSON.parse(high_scores);
-    }
-  
-    high_scores.push({ name: name, score: correctCount });
-  
-    localStorage.setItem("scores", JSON.stringify(high_scores));
-  
-    high_scores.sort(function (a, b) {
-      return b.score - a.score;
-    });'
+function scoreBoard() {
+
+  //Gets scores
+  var scoreBoardScore = localStorage.getItem("scores");
+
+  if (!scoreBoardScore) {
+    scoreBoardScore = [];
+  } else {
+    scoreBoardScore = JSON.parse(scoreBoardScore);
+  }
+
+  localStorage.setItem("scores", JSON.stringify(scoreBoardScore));
+
+  scoreBoardScore.sort(function (a, b) {
+    return b.score - a.score;
+  });
+
+  var contentUL = document.createElement("ul");
+
+  for (var i = 0; i < scoreBoardScore.length; i++) {
+    var contentLI = document.createElement("li");
+    contentLI.textContent =
+      "Name: " + scoreBoardScore[i].name + " Score: " + scoreBoardScore[i].score;
+    contentUL.appendChild(contentLI);
+  }
+
+  document.body.appendChild(contentUL);
+}
+
+scoreBoard();
