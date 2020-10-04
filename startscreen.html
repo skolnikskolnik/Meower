@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chemistry quiz welcome</title>
+</head>
+<body>
+    <h1>Chemistry quiz challenge</h1>
+    <h2>You will have ten seconds to answer five questions. </h2>
+    <h3>For every question you get wrong, you will lose two seconds.</h3>
+    <button id="startbutton">Click me to start!</button> 
+</body>
+
+<script>
+var startButton = document.querySelector("#startbutton");
+
+startButton.addEventListener("click", function(){
+    location.href="index.html";
+});
+</script>
+</html>

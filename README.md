@@ -9,3 +9,5 @@
     -created new js file and modified existing function to display high scores on a separate page
 
 4. Added a CSS to style the html
+
+5. Now to create a welcome screen for the quiz
