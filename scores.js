@@ -24,6 +24,10 @@ function scoreBoard() {
     contentUL.appendChild(contentLI);
   }
 
+  if(!scoreBoardScore){
+    contentLI.textContent = "Nothing to see yet.";
+  }
+
   document.body.appendChild(contentUL);
 }
 

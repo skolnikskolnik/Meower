@@ -41,7 +41,7 @@ var correctCount = 0;
 var time = 10;
 var intervalId;
 
-timerEl.textContent=time;
+timerEl.textContent=time +" seconds remaining!";
 
 function endQuiz() {
   clearInterval(intervalId);
@@ -87,7 +87,7 @@ function showHighScore() {
 
 function updateTime() {
   time--;
-  timerEl.textContent = time;
+  timerEl.textContent = time + " seconds remaining!";
   if (time <= 0) {
     endQuiz();
   }
