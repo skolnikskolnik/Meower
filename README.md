@@ -10,4 +10,6 @@
 
 4. Added a CSS to style the html
 
-5. Now to create a welcome screen for the quiz
+5. Created a welcome screen with a button that redirects to the questions
+
+6. Added media queries to make the timer display and link to high scores page work better on small screens 
