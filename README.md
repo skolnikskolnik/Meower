@@ -7,18 +7,28 @@ In this program, students will be greeted with a home page that tells them the r
 ### Screenshots
 
 Students are greeted with the following screen:
+
+
 ![Starting screen](./images/startscreen.JPG)
 
 They then see a series of questions:
+
+
 ![Sample question](./images/sample_question.JPG)
 
 When they are done they are prompted for their initials:
+
+
 ![Get initials](./images/asks_for_initials.JPG)
 
 If they do not enter initials an error message appears:
+
+
 ![Error message](./images/error_message.JPG)
 
 Then the high scores appear:
+
+
 ![High scores](./images/high_scores.JPG)
 
 
