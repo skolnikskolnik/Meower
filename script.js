@@ -35,9 +35,6 @@ var optionListEl = document.querySelector("#option-list");
 var questionResultEl = document.querySelector("#question-result");
 var timerEl = document.querySelector("#timer");
 var startEl = document.querySelector("#welcome");
-var quizEl = document.querySelector("#quiz_elements");
-var formEl = document.querySelector("#form");
-
 
 var questionIndex = 0;
 var correctCount = 0;
