@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <title>Chemistry quiz</title>
 </head>
+
 <body>
     <h1><a href="highScores.html">See high scores</a></h1>
 
-    <div id="timer" ></div>
+    <div id="quiz_elements">
+        <div id="timer"></div>
 
-    <div id="question"></div>
+        <div id="question"></div>
 
-    <ul id="option-list"></ul>
+        <ul id="option-list"></ul>
 
-    <div id="question-result"></div>
+        <div id="question-result"></div>
+    </div>
 
-    <form>
-        <label for="initials">Enter your initials</label>
-        <input type="text" id="initials" name="initials"><br>
-        <input type="submit" value="Submit">
-    </form>
-    
+    <div id="form">
+        <form>
+            <label for="initials">Enter your initials</label>
+            <input type="text" id="initials" name="initials"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

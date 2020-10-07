@@ -35,13 +35,16 @@ var optionListEl = document.querySelector("#option-list");
 var questionResultEl = document.querySelector("#question-result");
 var timerEl = document.querySelector("#timer");
 var startEl = document.querySelector("#welcome");
+var quizEl = document.querySelector("#quiz_elements");
+var formEl = document.querySelector("#form");
+
 
 var questionIndex = 0;
 var correctCount = 0;
 var time = 10;
 var intervalId;
 
-timerEl.textContent=time +" seconds remaining!";
+timerEl.textContent = time + " seconds remaining!";
 
 function endQuiz() {
   clearInterval(intervalId);
@@ -51,9 +54,14 @@ function endQuiz() {
   setTimeout(showHighScore, 2);
 }
 
+
 function showHighScore() {
   //Prompts user to enter initials
   var name = prompt("Please enter your initials");
+  if (!name) {
+    alert("Please enter your initials.");
+    var name = prompt("Please enter your initials");
+  }
 
   //Gets scores
   var high_scores = localStorage.getItem("scores");
@@ -94,7 +102,7 @@ function updateTime() {
 }
 
 function renderQuestion() {
-  
+
   if (time == 0) {
     updateTime();
     return;
