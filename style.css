@@ -59,11 +59,16 @@ a:hover{
     background-color: #47d147;
 }
 
-#form{
-    display: none;
-}
 
 @media screen and (max-width: 768px) {
+body{
+    font-size: 15px;
+}
+#startbutton{
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+}
 a{
     font-size: 10px;
 }
