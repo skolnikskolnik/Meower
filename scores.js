@@ -29,6 +29,13 @@ function scoreBoard() {
   }
 
   document.body.appendChild(contentUL);
+
+  var clearBtn = document.querySelector("#button_high");
+clearBtn.addEventListener("click", function(){
+  contentUL.innerHTML = "";
+})
+  
 }
+
 
 scoreBoard();

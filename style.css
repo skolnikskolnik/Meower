@@ -30,7 +30,7 @@ li:hover{
     width: 10%;
     height:100%;
 }
-a{
+.button{
    background-color: #000080;
    color: #e6e6ff;
    padding: 15px 32px;
@@ -41,7 +41,7 @@ a{
     width: 10%;
 }
 
-a:hover{
+.button:hover{
     background-color: #4d4dff;
 }
 
@@ -69,7 +69,7 @@ body{
     height: 45px;
     font-size: 15px;
 }
-a{
+.button{
     font-size: 10px;
 }
 
